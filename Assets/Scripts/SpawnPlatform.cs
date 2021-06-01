@@ -55,7 +55,7 @@ namespace Assembly_CSharp.Assets.Scripts
         {
             for (var i = 0; i < Platforms.Count; i++)
             {
-                var currentPlatform = Instantiate(Platforms[i], new Vector2(i * DISTANCE, 0), transform.rotation);
+                var currentPlatform = Instantiate(Platforms[i], new Vector2(i * DISTANCE, -4f), transform.rotation);
                 _platformsInstance.Add(currentPlatform.transform);
                 _offset += DISTANCE;
             }
