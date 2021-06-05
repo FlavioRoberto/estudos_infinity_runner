@@ -167,9 +167,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Platforms:
-  - {fileID: 6347078113264479140, guid: b4bca8d3864bfab419773df59fd92f20, type: 3}
-  - {fileID: 6704616201884794865, guid: 484da859c6bbc254abf7590c5f4bd246, type: 3}
-  - {fileID: 2225547348284352581, guid: 5e9d3b6c58194204aa99d76bcad988c9, type: 3}
+  - {fileID: 8847740942469785553, guid: b4bca8d3864bfab419773df59fd92f20, type: 3}
+  - {fileID: 7184700471020890444, guid: 484da859c6bbc254abf7590c5f4bd246, type: 3}
+  - {fileID: 5179929041753436243, guid: 5e9d3b6c58194204aa99d76bcad988c9, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,6 +338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 5
   ForceJump: 3
+  Animator: {fileID: 2007652102}
 --- !u!1 &2007652099
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,6 +349,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2007652100}
   - component: {fileID: 2007652101}
+  - component: {fileID: 2007652102}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -420,3 +422,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2007652102
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007652099}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1d3800edc2738f34eae6e87cd08cd694, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -1,3 +1,4 @@
+using Assembly_CSharp.Assets.Scripts.Factory.Move;
 using UnityEngine;
 
 namespace Assembly_CSharp.Assets.Scripts
@@ -6,28 +7,23 @@ namespace Assembly_CSharp.Assets.Scripts
     {
         public float Speed;
         public float ForceJump;
-        private Rigidbody2D _rigidBody;
+        public Animator Animator;
+        private MoveFactory _moveFactory;
 
         void Start()
         {
-            _rigidBody = GetComponent<Rigidbody2D>();
+            _moveFactory = new MoveFactory(this);
         }
 
         void FixedUpdate()
         {
-            MoveRight();
-            Jump();
+            _moveFactory.Move(Speed, ForceJump);
         }
 
-        private void MoveRight()
+        void OnCollisionEnter2D(Collision2D collision)
         {
-            _rigidBody.velocity = new Vector2(Speed, _rigidBody.velocity.y);
+            _moveFactory.OnCollisionEnter(collision);
         }
 
-        private void Jump()
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-                _rigidBody.AddForce(Vector2.up * ForceJump, ForceMode2D.Impulse);
-        }
     }
 }
