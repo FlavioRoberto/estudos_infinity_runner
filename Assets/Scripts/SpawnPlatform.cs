@@ -68,7 +68,7 @@ namespace Assembly_CSharp.Assets.Scripts
 
         private void Recycle(GameObject platform)
         {
-            platform.transform.position = new Vector2(_offset, 0);
+            platform.transform.position = new Vector2(_offset, -4);
             _offset += DISTANCE;
         }
     }
