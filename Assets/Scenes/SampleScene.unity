@@ -400,6 +400,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 8205961521008242515, guid: ba231b0bdfe9bd6458b95864b4cbdbce, type: 3}
+  - {fileID: 6276967873291785396, guid: c525e246e18cee84981c1cd7416938cf, type: 3}
+  - {fileID: 2717811740410029650, guid: c1cf3e52015709743a57c51710a72c6c, type: 3}
   SpawnTime: 1
 --- !u!1 &2007652099
 GameObject:
