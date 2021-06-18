@@ -380,7 +380,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675604877}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.23, y: 2.66, z: 10}
+  m_LocalPosition: {x: 7.23, y: 2, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 519420032}
@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 5650732690186894562, guid: ba231b0bdfe9bd6458b95864b4cbdbce, type: 3}
+  - {fileID: 8205961521008242515, guid: ba231b0bdfe9bd6458b95864b4cbdbce, type: 3}
   SpawnTime: 1
 --- !u!1 &2007652099
 GameObject:

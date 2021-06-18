@@ -26,7 +26,8 @@ namespace Assembly_CSharp.Assets.Scripts
 
         private void Spawn()
         {
-            Instantiate(enemies[0], transform.position, transform.rotation);
+            var positionY = transform.position + new Vector3(0, Random.Range(-2, 2));
+            Instantiate(enemies[0], positionY, transform.rotation);
         }
     }
 }
