@@ -1,0 +1,20 @@
+﻿using UnityEngine;
+
+public class EnemyShooter : MonoBehaviour
+{
+    public GameObject Projectile;
+    public Transform FirePoint;
+    public float ThrowTime;
+    private float _throwCount;
+
+    void Update()
+    {
+        _throwCount += Time.deltaTime;
+
+        if (_throwCount >= ThrowTime)
+        {
+            Instantiate(Projectile, FirePoint.position, FirePoint.rotation);
+            _throwCount = 0;
+        }
+    }
+}
