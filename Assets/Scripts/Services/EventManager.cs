@@ -29,7 +29,7 @@ namespace Assembly_CSharp.Assets.Scripts.Services
 
         internal void UnsubscribeAll()
         {
-            _listeners.RemoveAll(lnq => lnq != null);
+            _listeners.Clear();
         }
     }
 }
