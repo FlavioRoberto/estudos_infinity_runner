@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 373949389}
-  - component: {fileID: 373949390}
+  - component: {fileID: 373949391}
   m_Layer: 0
   m_Name: Spawn Platforms
   m_TagString: Untagged
@@ -154,7 +154,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &373949390
+--- !u!114 &373949391
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 373949388}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46f6164a19cbbc440b0706253fc9d2d8, type: 3}
+  m_Script: {fileID: 11500000, guid: e25d69c87112f6b48aeed64fbe3f9632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Platforms:
@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -197,20 +197,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
---- !u!114 &519420030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e94165594f6a63a45ad444530925573d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TransitionSpeed: 200
-  Offset: 5
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -269,6 +255,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62f1497a4d726d34bae996fcd23d4afc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TransitionSpeed: 100
+  Offset: 5
 --- !u!1 &1342077185
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 1342077186}
   - component: {fileID: 1342077187}
   - component: {fileID: 1342077188}
-  - component: {fileID: 1342077189}
+  - component: {fileID: 1342077190}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -340,7 +340,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &1342077189
+--- !u!114 &1342077190
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -349,7 +349,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1342077185}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 869e9670ecc08d343b2437ea9524286f, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fb3c857ef0ac8943926e8b1e0216f26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 5
@@ -364,7 +364,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1675604878}
-  - component: {fileID: 1675604879}
+  - component: {fileID: 1675604880}
   m_Layer: 0
   m_Name: SpawnEnemies
   m_TagString: Untagged
@@ -386,7 +386,7 @@ Transform:
   m_Father: {fileID: 519420032}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1675604879
+--- !u!114 &1675604880
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -395,14 +395,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1675604877}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09fed53cde5912c4c836b3cabe16ab47, type: 3}
+  m_Script: {fileID: 11500000, guid: b3687548d6fe38a43b8e6db56a6fe7c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 8205961521008242515, guid: ba231b0bdfe9bd6458b95864b4cbdbce, type: 3}
-  - {fileID: 6276967873291785396, guid: c525e246e18cee84981c1cd7416938cf, type: 3}
   - {fileID: 2717811740410029650, guid: c1cf3e52015709743a57c51710a72c6c, type: 3}
-  SpawnTime: 1
+  - {fileID: 6276967873291785396, guid: c525e246e18cee84981c1cd7416938cf, type: 3}
+  - {fileID: 8205961521008242515, guid: ba231b0bdfe9bd6458b95864b4cbdbce, type: 3}
+  SpawnTime: 2
 --- !u!1 &2007652099
 GameObject:
   m_ObjectHideFlags: 0

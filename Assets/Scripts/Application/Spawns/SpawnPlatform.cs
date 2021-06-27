@@ -2,7 +2,7 @@
 using Assembly_CSharp.Assets.Scripts.Helpers;
 using UnityEngine;
 
-namespace Assembly_CSharp.Assets.Scripts
+namespace Assembly_CSharp.Assets.Scripts.Application.Spawns
 {
     public class SpawnPlatform : MonoBehaviour
     {
@@ -66,10 +66,11 @@ namespace Assembly_CSharp.Assets.Scripts
             _currentPlatformPoint = _platformsInstance[_currentPlatformIndex].GetComponent<Platform>().FinalPoint;
         }
 
-        private void Recycle(GameObject platform)
+        private void Recycle(GameObject gameObject)
         {
-            platform.transform.position = new Vector2(_offset, -4);
+            gameObject.transform.position = new Vector2(_offset, -4);
             _offset += DISTANCE;
+            gameObject.GetComponent<Platform>().OnRecycle();
         }
     }
 }

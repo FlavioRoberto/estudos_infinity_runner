@@ -110,12 +110,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5903577349748108969}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da5083cdcd0005044bea3ac626d0fdd1, type: 3}
+  m_Script: {fileID: 11500000, guid: f6296216deea7b04cbc1a1d3738f9fb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Projectile: {fileID: 6825937804005119663, guid: 38d105d546977f044b7cb3bb40fae70c, type: 3}
   FirePoint: {fileID: 5903577350632577308}
-  ThrowTime: 2
+  ThrowTime: 3
 --- !u!1 &5903577350632577309
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,7 +1,7 @@
 using Assembly_CSharp.Assets.Scripts.Helpers;
 using UnityEngine;
 
-namespace Assembly_CSharp.Assets.Scripts
+namespace Assembly_CSharp.Assets.Scripts.Application
 {
     public class Camera : MonoBehaviour
     {

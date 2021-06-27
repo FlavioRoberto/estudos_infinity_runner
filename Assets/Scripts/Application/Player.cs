@@ -1,7 +1,7 @@
 using Assembly_CSharp.Assets.Scripts.Factory.Move;
 using UnityEngine;
 
-namespace Assembly_CSharp.Assets.Scripts
+namespace Assembly_CSharp.Assets.Scripts.Application
 {
     public class Player : MonoBehaviour
     {
@@ -15,7 +15,7 @@ namespace Assembly_CSharp.Assets.Scripts
             _moveFactory = new MoveFactory(this);
         }
 
-        void FixedUpdate()
+        void Update()
         {
             _moveFactory.Move(Speed, ForceJump);
         }
