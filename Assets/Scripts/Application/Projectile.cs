@@ -29,7 +29,7 @@ namespace Assembly_CSharp.Assets.Scripts.Application
         {
             var explosion = Instantiate(EffectPrefab, transform.position, transform.rotation);
             Destroy(gameObject);
-            Destroy(explosion, 0.65f);
+            Destroy(explosion, 1f);
         }
 
 
