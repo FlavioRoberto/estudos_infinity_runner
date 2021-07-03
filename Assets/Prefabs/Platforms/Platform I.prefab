@@ -43,6 +43,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -251,7 +252,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8847740942469785553}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1dadfe9d85f7c244ba0c22dcf618dc6a, type: 3}
+  m_Script: {fileID: 11500000, guid: 3da03642006b0cd4d865befd323212d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   FinalPoint: {fileID: 8035760142690177505}
