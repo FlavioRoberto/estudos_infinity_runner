@@ -24,7 +24,7 @@ namespace Assembly_CSharp.Assets.Scripts.Factory.Move
 
         public override void OnCollisionEnter(Collision2D collision)
         {
-            if (collision.gameObject.tag == TagHelpers.PLATFORM)
+            if (collision != null && collision.gameObject.tag == TagHelpers.PLATFORM)
             {
                 isJumping = false;
                 Animator.SetBool(AnimatorHelpers.JUMPING, false);

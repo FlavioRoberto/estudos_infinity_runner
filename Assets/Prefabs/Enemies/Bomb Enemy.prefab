@@ -45,6 +45,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -113,6 +114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6296216deea7b04cbc1a1d3738f9fb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Health: 1
+  Damage: 0
   Projectile: {fileID: 6825937804005119663, guid: 38d105d546977f044b7cb3bb40fae70c, type: 3}
   FirePoint: {fileID: 5903577350632577308}
   ThrowTime: 3

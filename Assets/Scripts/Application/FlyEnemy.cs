@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using Assembly_CSharp.Assets.Scripts.Application.Base;
+using UnityEngine;
 
 namespace Assembly_CSharp.Assets.Scripts.Application
 {
-    public class FlyEnemy : MonoBehaviour
+    public class FlyEnemy : EnemyApplication
     {
         public float Speed = 10;
         public float timeDestroy = 5;

@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using Assembly_CSharp.Assets.Scripts.Application.Base;
+using UnityEngine;
 
 namespace Assembly_CSharp.Assets.Scripts.Application
 {
-    public class EnemyShooter : MonoBehaviour
+    public class EnemyShooter : EnemyApplication
     {
         public GameObject Projectile;
         public Transform FirePoint;

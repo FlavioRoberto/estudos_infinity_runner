@@ -4,6 +4,7 @@ namespace Assembly_CSharp.Assets.Scripts.Helpers
     {
         public static readonly string PLAYER = "Player";
         public static readonly string PLATFORM = "Platform";
+        public static readonly string PROJECTILLE = "Projectille";
 
     }
 }

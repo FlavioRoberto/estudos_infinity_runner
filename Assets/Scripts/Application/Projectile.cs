@@ -5,6 +5,7 @@ namespace Assembly_CSharp.Assets.Scripts.Application
     public class Projectile : MonoBehaviour
     {
         private Rigidbody2D _rigidBody;
+        public int Damage = 1;
         public float Speed = 10;
 
         void Start()
@@ -16,6 +17,11 @@ namespace Assembly_CSharp.Assets.Scripts.Application
         void FixedUpdate()
         {
             _rigidBody.velocity = Vector2.right * Speed;
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            Destroy(gameObject);
         }
 
     }
