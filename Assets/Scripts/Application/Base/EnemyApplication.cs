@@ -10,7 +10,7 @@ namespace Assembly_CSharp.Assets.Scripts.Application.Base
         public int Damage;
         protected Enemy _enemy;
 
-        private void Start()
+        protected virtual void Start()
         {
             _enemy = new Enemy(Health, Damage);
         }

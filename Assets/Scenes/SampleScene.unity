@@ -358,7 +358,7 @@ MonoBehaviour:
   FirePoint: {fileID: 2085686208}
   Speed: 5
   ForceJump: 10
-  ReloadTime: 2
+  ReloadTime: 1
 --- !u!1 &1675604877
 GameObject:
   m_ObjectHideFlags: 0

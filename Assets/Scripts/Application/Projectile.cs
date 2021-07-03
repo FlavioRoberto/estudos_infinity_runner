@@ -7,11 +7,12 @@ namespace Assembly_CSharp.Assets.Scripts.Application
         private Rigidbody2D _rigidBody;
         public int Damage = 1;
         public float Speed = 10;
+        public GameObject EffectPrefab;
 
         void Start()
         {
             _rigidBody = GetComponent<Rigidbody2D>();
-            Destroy(gameObject, 3f);
+            Destroy(gameObject, 4);
         }
 
         void FixedUpdate()
@@ -21,8 +22,16 @@ namespace Assembly_CSharp.Assets.Scripts.Application
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            Destroy(gameObject);
+            OnHit();
         }
+
+        private void OnHit()
+        {
+            var explosion = Instantiate(EffectPrefab, transform.position, transform.rotation);
+            Destroy(gameObject);
+            Destroy(explosion, 0.65f);
+        }
+
 
     }
 }
