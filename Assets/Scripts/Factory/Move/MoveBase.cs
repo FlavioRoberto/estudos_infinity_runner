@@ -1,5 +1,6 @@
 using UnityEngine;
 using Assembly_CSharp.Assets.Scripts.Application;
+using Assembly_CSharp.Assets.Scripts.Models;
 
 namespace Assembly_CSharp.Assets.Scripts.Factory.Move
 {
@@ -15,7 +16,7 @@ namespace Assembly_CSharp.Assets.Scripts.Factory.Move
 
         protected Rigidbody2D Rigidbody
         {
-            get { return _player.GetComponent<Rigidbody2D>(); }
+            get { return _player.Rigidbody2D; }
         }
 
         protected Animator Animator

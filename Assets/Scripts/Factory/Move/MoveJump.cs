@@ -1,6 +1,6 @@
 using UnityEngine;
 using Assembly_CSharp.Assets.Scripts.Helpers;
-using Assembly_CSharp.Assets.Scripts.Application;
+using Assembly_CSharp.Assets.Scripts.Models;
 
 namespace Assembly_CSharp.Assets.Scripts.Factory.Move
 {

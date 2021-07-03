@@ -1,4 +1,5 @@
 using Assembly_CSharp.Assets.Scripts.Application;
+using Assembly_CSharp.Assets.Scripts.Models;
 using UnityEngine;
 
 namespace Assembly_CSharp.Assets.Scripts.Factory.Move

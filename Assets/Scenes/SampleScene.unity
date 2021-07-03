@@ -350,11 +350,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1342077185}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fb3c857ef0ac8943926e8b1e0216f26, type: 3}
+  m_Script: {fileID: 11500000, guid: af9c352dbacc9de4b959b5fa54d8fbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 5
   ForceJump: 10
+  ReloadTime: 2
   Animator: {fileID: 2007652102}
   Projectille: {fileID: 484208181065531259, guid: 92c862445c754504dbc1acf210403279, type: 3}
   FirePoint: {fileID: 2085686208}
