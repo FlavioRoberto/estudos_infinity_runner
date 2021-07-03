@@ -7,7 +7,10 @@ namespace Assembly_CSharp.Assets.Scripts.Application
     {
         public float Speed;
         public float ForceJump;
+        public float ReloadTime = 2f;
         public Animator Animator;
+        public Projectile Projectille;
+        public Transform FirePoint;
         private MoveFactory _moveFactory;
 
         void Start()

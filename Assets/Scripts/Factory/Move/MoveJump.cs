@@ -12,13 +12,13 @@ namespace Assembly_CSharp.Assets.Scripts.Factory.Move
         {
         }
 
-        public void Move(float forceJump)
+        public override void Move(float forceJump)
         {
             if (Input.GetKeyDown(KeyCode.Space) && !isJumping)
             {
                 isJumping = true;
-                GetAnimator().SetBool(AnimatorHelpers.JUMPING, true);
-                GetRigidbody().AddForce(Vector2.up * forceJump, ForceMode2D.Impulse);
+                Animator.SetBool(AnimatorHelpers.JUMPING, true);
+                Rigidbody.AddForce(Vector2.up * forceJump, ForceMode2D.Impulse);
             }
         }
 
@@ -27,7 +27,7 @@ namespace Assembly_CSharp.Assets.Scripts.Factory.Move
             if (collision.gameObject.tag == TagHelpers.PLATFORM)
             {
                 isJumping = false;
-                GetAnimator().SetBool(AnimatorHelpers.JUMPING, false);
+                Animator.SetBool(AnimatorHelpers.JUMPING, false);
             }
         }
     }

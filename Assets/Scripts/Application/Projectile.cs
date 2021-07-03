@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Assembly_CSharp.Assets.Scripts.Application
@@ -11,6 +10,7 @@ namespace Assembly_CSharp.Assets.Scripts.Application
         void Start()
         {
             _rigidBody = GetComponent<Rigidbody2D>();
+            Destroy(gameObject, 3f);
         }
 
         void FixedUpdate()

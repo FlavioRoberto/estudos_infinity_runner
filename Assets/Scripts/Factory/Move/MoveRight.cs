@@ -10,10 +10,9 @@ namespace Assembly_CSharp.Assets.Scripts.Factory.Move
         {
         }
 
-        public void Move(float speed)
+        public override void Move(float speed)
         {
-            var rigidBody = GetRigidbody();
-            rigidBody.velocity = new Vector2(speed, rigidBody.velocity.y);
+            Rigidbody.velocity = new Vector2(speed, Rigidbody.velocity.y);
         }
     }
 }
