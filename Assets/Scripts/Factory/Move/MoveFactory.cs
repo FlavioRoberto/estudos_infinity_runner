@@ -1,5 +1,4 @@
 using UnityEngine;
-using Assembly_CSharp.Assets.Scripts.Application;
 using Assembly_CSharp.Assets.Scripts.Models;
 
 namespace Assembly_CSharp.Assets.Scripts.Factory.Move
@@ -24,9 +23,9 @@ namespace Assembly_CSharp.Assets.Scripts.Factory.Move
             _moveShoot.Move();
         }
 
-        public void OnCollisionEnter(Collision2D collision)
+        public void CollisionEnter(Collision2D collision)
         {
-            _moveJump.OnCollisionEnter(collision);
+            _moveJump.CollisionEnter(collision);
         }
     }
 }

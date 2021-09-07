@@ -22,7 +22,7 @@ namespace Assembly_CSharp.Assets.Scripts.Factory.Move
             }
         }
 
-        public override void OnCollisionEnter(Collision2D collision)
+        public override void CollisionEnter(Collision2D collision)
         {
             if (collision != null && collision.gameObject.tag == TagHelpers.PLATFORM)
             {

@@ -14,9 +14,10 @@ namespace Assembly_CSharp.Assets.Scripts.Models
         public float Speed { get; private set; }
         public float ForceJump { get; private set; }
         public float ReloadTime { get; private set; }
-        private MoveFactory _moveFactory;
+        public int Health { get; private set; }
 
-        public Player(Animator animator, Projectile projectille, Transform firePoint, Rigidbody2D rigidbody2D, float speed, float forceJump, float reloadTime)
+
+        public Player(Animator animator, Projectile projectille, Transform firePoint, Rigidbody2D rigidbody2D, int health, float speed, float forceJump, float reloadTime)
         {
             this.Animator = animator;
             this.Projectille = projectille;
@@ -25,17 +26,17 @@ namespace Assembly_CSharp.Assets.Scripts.Models
             this.Speed = speed;
             this.ForceJump = forceJump;
             this.ReloadTime = reloadTime;
-            _moveFactory = new MoveFactory(this);
+            this.Health = health;
         }
 
-        public void Move()
+        public bool IsDead()
         {
-            _moveFactory.Move(Speed, ForceJump);
+            return Health <= 0;
         }
 
-        public void OnCollisionEnter(Collision2D colision)
+        public void Hit(int damage)
         {
-            _moveFactory.OnCollisionEnter(colision);
+            Health -= damage;
         }
     }
 }

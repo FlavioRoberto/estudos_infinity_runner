@@ -156,6 +156,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 3
-  Damage: 0
+  damage: 2
   Speed: 5
   timeDestroy: 5

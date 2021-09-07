@@ -39,7 +39,7 @@ namespace Assembly_CSharp.Assets.Scripts.Factory.Move
             get { return _player.ReloadTime; }
         }
 
-        public virtual void OnCollisionEnter(Collision2D collision)
+        public virtual void CollisionEnter(Collision2D collision)
         {
         }
     }

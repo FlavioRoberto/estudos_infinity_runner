@@ -45,6 +45,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -134,5 +135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5637626296f1e4b4fbac025d12db8763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 2
   xAxis: -7
   yAxis: 5
