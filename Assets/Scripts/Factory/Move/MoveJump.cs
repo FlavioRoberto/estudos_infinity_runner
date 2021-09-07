@@ -14,7 +14,7 @@ namespace Assembly_CSharp.Assets.Scripts.Factory.Move
 
         public override void Move(float forceJump)
         {
-            if (Input.GetKeyDown(KeyCode.Space) && !isJumping)
+            if (!isJumping)
             {
                 isJumping = true;
                 Animator.SetBool(AnimatorHelpers.JUMPING, true);

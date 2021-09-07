@@ -39,6 +39,16 @@ namespace Assembly_CSharp.Assets.Scripts.Application
             ApplyDamage(collider);
         }
 
+        public void OnJump()
+        {
+            _moveFactory.Jump(ForceJump);
+        }
+
+        public void OnShoot()
+        {
+            _moveFactory.Shoot();
+        }
+
         private void OnHit(int damage)
         {
             _player.Hit(damage);

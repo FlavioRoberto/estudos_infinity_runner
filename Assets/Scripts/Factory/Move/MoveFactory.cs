@@ -18,8 +18,23 @@ namespace Assembly_CSharp.Assets.Scripts.Factory.Move
 
         public void Move(float speed, float jumpForce)
         {
-            _moveJump.Move(jumpForce);
+            if (Input.GetKeyDown(KeyCode.Space))
+                _moveJump.Move(jumpForce);
+
+            if (Input.GetKeyDown(KeyCode.D))
+                _moveShoot.Move();
+
             _moveRight.Move(speed);
+
+        }
+
+        public void Jump(float jumpForce)
+        {
+            _moveJump.Move(jumpForce);
+        }
+
+        public void Shoot()
+        {
             _moveShoot.Move();
         }
 
